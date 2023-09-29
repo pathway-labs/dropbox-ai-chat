@@ -18,7 +18,7 @@ def run(host, port):
         autocommit_duration_ms=50,
     )
 
-    # Real-time data coming from external unstructured data sources like 
+    # Real-time data coming from external unstructured data sources like a PDF file
     input_data = pw.io.fs.read(
         dropbox_folder_path,
         mode="streaming",
@@ -48,10 +48,6 @@ def run(host, port):
 
     # Run the pipeline
     pw.run()
-
-
-class DataInputSchema(pw.Schema):
-    doc: str
 
 
 class QueryInputSchema(pw.Schema):
