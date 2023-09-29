@@ -1,0 +1,9 @@
+pathway
+llm_app
+unstructured[pdf]
+tiktoken
+pandas
+requests
+datetime
+streamlit
+python-dotenv
