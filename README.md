@@ -1,6 +1,6 @@
 # Dropbox AI search tool
 
-Quickly summarize content and get the information you need from private large unstructered documents in your [Dropbox](https://dropbox.com/). The same tool can be used with [OneDrive](https://onedrive.live.com/login/).
+Quickly summarize the content and get the information you need in **real-time** from private large unstructured documents in your [Dropbox](https://dropbox.com/). The same tool can be used with [OneDrive](https://onedrive.live.com/login/).
 
 ## Demo
 
@@ -78,4 +78,4 @@ python main.py
 ### Step 6: Run Streamlit UI
 
 You can run the UI separately by running Streamlit app
-`streamlit run app.py` command. It connects to the Pathway's backend API automatically and you will see the UI frontend is running on your browser.
+`streamlit run ui.py` command. It connects to the Pathway's backend API automatically and you will see the UI frontend is running on your browser.
