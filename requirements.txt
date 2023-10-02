@@ -1,6 +1,6 @@
 pathway
 llm_app
-unstructured[pdf]
+unstructured[all-docs]==0.10.15
 tiktoken
 requests
 datetime
