@@ -53,7 +53,15 @@ DROPBOX_LOCAL_FOLDER_PATH="../../../mnt/c/Users/bumur/Dropbox/documents"
 
 Replace DROPBOX_LOCAL_FOLDER_PATH with your local Dropbox folder path and optionally, you customize other values.
 
-### Step 3: Install the app dependencies
+### Step 3 (Optional): Create a new virtual environment
+
+Create a new virtual environment in the same folder and activate that environment:
+
+```bash
+python -m venv pw-env && source pw-env/bin/activate
+```
+
+### Step 4: Install the app dependencies
 
 Install the required packages:
 
@@ -61,13 +69,6 @@ Install the required packages:
 pip install --upgrade -r requirements.txt
 ```
 
-### Step 4 (Optional): Create a new virtual environment
-
-Create a new virtual environment in the same folder and activate that environment:
-
-```bash
-python -m venv pw-env && source pw-env/bin/activate
-```
 
 ### Step 5: Run the Pathway API
 
