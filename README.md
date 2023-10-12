@@ -32,7 +32,7 @@ git clone https://github.com/Boburmirzo/dropbox-ai-search-tool.git
 Next,  navigate to the project folder:
 
 ```bash
-cd dropbox-ai-search-tool
+cd dropbox-ai-chat
 ```
 
 ### Step 2: Set environment variables
