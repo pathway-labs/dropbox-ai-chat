@@ -12,6 +12,11 @@ As you can see the LLM App enables AI-powered search from multiple unstructured 
 
 ## How to run the tool
 
+For a step-by-step walkthrough in real time (~7 mins) check out the video below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PbSAYHi5gnM?si=Xy8eQbk7bYaCLVy7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 ### Prerequisites
 
 1. Make sure that [Python](https://www.python.org/downloads/) 3.10 or above installed on your machine.
