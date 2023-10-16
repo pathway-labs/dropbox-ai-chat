@@ -14,7 +14,7 @@ As you can see the LLM App enables AI-powered search from multiple unstructured 
 
 For a step-by-step walkthrough in real time (~7 mins) check out the video below:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PbSAYHi5gnM?si=Xy8eQbk7bYaCLVy7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Thumbnail of YouTube walkthrough](assets/yt-thumbnail.png)](https://youtu.be/PbSAYHi5gnM?si=GAi3hYFTiJMO0EQH)
 
 
 ### Prerequisites
