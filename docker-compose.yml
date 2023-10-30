@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     command: python main.py 
     volumes:
-      - ../../../mnt/c/Users/bumur/Dropbox/documents:/usr/local/documents:ro 
+      - ${PATH_TO_DROPBOX}:/usr/local/documents:ro 
     env_file:
       - .env
     ports: 
