@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: python main.py 
+    volumes:
+      - ../../../mnt/c/Users/bumur/Dropbox/documents:/usr/local/documents:ro 
+    env_file:
+      - .env
+    ports: 
+      - 8080:8080
+    networks:
+      - app_network
+
+  ui:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: streamlit run ui.py  
+    env_file:
+      - .env
+    ports: 
+      - 8501:8501
+    networks:
+      - app_network
+    depends_on:
+      - api   
+
+networks:
+  app_network:
+    driver: bridge
