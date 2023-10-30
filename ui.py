@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-api_host = os.environ.get("HOST", "0.0.0.0")
+api_host = os.environ.get("HOST", "api")
 api_port = int(os.environ.get("PORT", 8080))
 
 

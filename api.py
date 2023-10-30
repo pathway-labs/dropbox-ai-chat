@@ -6,7 +6,7 @@ from common.prompt import prompt
 from llm_app import chunk_texts, extract_texts
 load_dotenv()
 
-dropbox_folder_path = os.environ.get("DROPBOX_LOCAL_FOLDER_PATH", "")
+dropbox_folder_path = os.environ.get("DROPBOX_LOCAL_FOLDER_PATH", "/usr/local/documents")
 
 
 def run(host, port):
