@@ -22,7 +22,7 @@ For a step-by-step walkthrough in real time (~7 mins) check out the video below:
 
 ### Run with Docker
 
-1. Create `.env` file in the root directory of the project, copy and paste the below config. Replace the `OPENAI_API_TOKEN` configuration value with your key `{OPENAI_API_KEY}` and replace `PATH_TO_DROPBOX` with a relative path where Dropbox folder is located `{REPLACE_WITH_DROPBOX_RELATIVE_PATH}` in the parent directory. For example, if the current project folder is `DROPBOX-SEARCH-TOOL`, you navigate to the Dropbox path in the parent directory: `../../../mnt/c/Users/bumur/Dropbox/documents`. Other properties are optional to change and be default.
+1. Create `.env` file in the root directory of the project, copy and paste the below config. Replace the `OPENAI_API_TOKEN` configuration value with your key `{OPENAI_API_KEY}` and replace `PATH_TO_DROPBOX` with a path where Dropbox folder is located `{REPLACE_WITH_DROPBOX_FOLDER_PATH}`. For example, if the current project folder is `DROPBOX-SEARCH-TOOL`, you navigate to the Dropbox path in the home directory: `../Dropbox/documents`. Other properties are optional to change and be default.
 
 ```bash
 OPENAI_API_TOKEN={OPENAI_API_KEY}
