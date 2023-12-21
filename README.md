@@ -22,7 +22,7 @@ For a step-by-step walkthrough in real time (~7 mins) check out the video below:
 
 ### Run with Docker
 
-1. Create `.env` file in the root directory of the project, copy and paste the below config. Replace the `OPENAI_API_TOKEN` configuration value with your key `{OPENAI_API_KEY}` and replace `PATH_TO_DROPBOX` with a path where Dropbox folder is located `{REPLACE_WITH_DROPBOX_FOLDER_PATH}`. For example, if the current project folder is `DROPBOX-SEARCH-TOOL`, you navigate to the Dropbox path in the home directory: `../Dropbox/documents`. Other properties are optional to change and be default.
+1. Create `.env` file in the root directory of the project, copy and paste the below config. Replace the `OPENAI_API_TOKEN` configuration value with your key `{OPENAI_API_KEY}` and replace `DROPBOX_LOCAL_FOLDER_PATH` with a path where Dropbox folder is located `{REPLACE_WITH_DROPBOX_FOLDER_PATH}`. For example, if the current project folder is `DROPBOX-SEARCH-TOOL`, you navigate to the Dropbox path in the home directory: `../Dropbox/documents`. Other properties are optional to change and be default.
 
 ```bash
 OPENAI_API_TOKEN={OPENAI_API_KEY}
@@ -31,7 +31,7 @@ EMBEDDING_DIMENSION=1536
 MODEL_LOCATOR=gpt-3.5-turbo
 MAX_TOKENS=200
 TEMPERATURE=0.0
-PATH_TO_DROPBOX={REPLACE_WITH_DROPBOX_RELATIVE_PATH}
+DROPBOX_LOCAL_FOLDER_PATH={REPLACE_WITH_DROPBOX_RELATIVE_PATH}
 ```
 
 2. From the project root folder, open your terminal and run `docker compose up`.

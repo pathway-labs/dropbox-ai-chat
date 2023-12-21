@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     command: python main.py 
     volumes:
-      - ${PATH_TO_DROPBOX}:/usr/local/documents:ro 
+      - ${DROPBOX_LOCAL_FOLDER_PATH}:/usr/local/documents:ro 
     env_file:
       - .env
     ports: 
