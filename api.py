@@ -3,7 +3,8 @@ import os
 from dotenv import load_dotenv
 from common.embedder import embeddings, index_embeddings
 from common.prompt import prompt
-from llm_app import chunk_texts, extract_texts
+from pathway.xpacks.llm.parsers import ParseUnstructured
+from pathway.xpacks.llm.splitters import TokenCountSplitter
 load_dotenv()
 
 dropbox_folder_path = os.environ.get("DROPBOX_LOCAL_FOLDER_PATH", "/usr/local/documents")
@@ -27,9 +28,15 @@ def run(host, port):
     )
     
     # Chunk input data into smaller documents
-    documents = input_data.select(texts=extract_texts(pw.this.data))
-    documents = documents.select(chunks=chunk_texts(pw.this.texts))
-    documents = documents.flatten(pw.this.chunks).rename_columns(chunk=pw.this.chunks)
+    parser = ParseUnstructured()
+    documents = input_data.select(texts=parser(pw.this.data))
+    documents = documents.flatten(pw.this.texts)
+    documents = documents.select(texts=pw.this.texts[0])
+
+    splitter = TokenCountSplitter()
+    documents = documents.select(chunks=splitter(pw.this.texts))
+    documents = documents.flatten(pw.this.chunks)
+    documents = documents.select(chunk=pw.this.chunks[0])
 
     # Compute embeddings for each document using the OpenAI Embeddings API
     embedded_data = embeddings(context=documents, data_to_embed=pw.this.chunk)
