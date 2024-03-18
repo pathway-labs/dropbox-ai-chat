@@ -7,7 +7,7 @@ from pathway.xpacks.llm.parsers import ParseUnstructured
 from pathway.xpacks.llm.splitters import TokenCountSplitter
 load_dotenv()
 
-dropbox_folder_path = "/usr/local/documents"
+dropbox_folder_path = os.environ.get("DROPBOX_LOCAL_FOLDER_PATH", "/usr/local/documents")
 
 
 def run(host, port):
